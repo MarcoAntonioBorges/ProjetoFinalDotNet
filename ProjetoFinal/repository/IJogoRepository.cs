@@ -1,5 +1,7 @@
 ﻿using ProjetoFinal.Models;
+using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace ProjetoFinal.repository
 {
@@ -11,5 +13,8 @@ namespace ProjetoFinal.repository
         IList<Jogo> Listar();
         Jogo BuscarPorCodigo(int codigo);
         void Salvar();
+        IList<Jogo> BuscarPor(Expression<Func<Jogo, bool>> filtro);
+
+        IList<Jogo> ListarJuntoGenero();
     }
 }

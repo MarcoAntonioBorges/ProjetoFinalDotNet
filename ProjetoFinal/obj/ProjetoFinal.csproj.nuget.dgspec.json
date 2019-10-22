@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Thiago\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj": {}
+    "D:\\_Thiago\\ProjetoFinalDotNet\\ProjetoFinal\\ProjetoFinal.csproj": {}
   },
   "projects": {
-    "D:\\Thiago\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj": {
+    "D:\\_Thiago\\ProjetoFinalDotNet\\ProjetoFinal\\ProjetoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Thiago\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
+        "projectUniqueName": "D:\\_Thiago\\ProjetoFinalDotNet\\ProjetoFinal\\ProjetoFinal.csproj",
         "projectName": "ProjetoFinal",
-        "projectPath": "D:\\Thiago\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
-        "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-        "outputPath": "D:\\Thiago\\ProjetoFinal\\ProjetoFinal\\obj\\",
+        "projectPath": "D:\\_Thiago\\ProjetoFinalDotNet\\ProjetoFinal\\ProjetoFinal.csproj",
+        "packagesPath": "C:\\Users\\logonpflocal\\.nuget\\packages\\",
+        "outputPath": "D:\\_Thiago\\ProjetoFinalDotNet\\ProjetoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\logonrmlocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\logonpflocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

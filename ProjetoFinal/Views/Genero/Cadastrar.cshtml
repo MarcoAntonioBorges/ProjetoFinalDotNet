@@ -4,7 +4,10 @@
     ViewData["Title"] = "Cadastrar";
 }
 
-@ViewData["msg"]
+@if (@TempData["msg"] != null)
+{
+    <message mensagem=@(TempData["msg"])></message>
+}
 
 <h1>Cadastrar</h1>
 

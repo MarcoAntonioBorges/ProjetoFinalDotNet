@@ -29,7 +29,7 @@ namespace ProjetoFinal.Controllers
         {
             _repository.Cadastrar(genero);
             _repository.Salvar();
-            ViewData["msg"] = "Cadastrado com sucesso!!";
+            TempData["msg"] = "Cadastrado com sucesso!!";
             return RedirectToAction("Cadastrar");
         }
 

@@ -1,0 +1,46 @@
+﻿@model IList<Jogo>
+
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<h1>Listar</h1>
+
+@if (@TempData["msg"] != null)
+{
+    <message mensagem=@(TempData["msg"])></message>
+}
+
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Data Lancamento</th>
+        <th>Disponivel</th>
+        <th>Plataforma</th>
+        <th>Genero</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@item.DataLancamento</td>
+            <td>@(item.Disponivel ? "Sim" : "Não")</td>
+            <td>@item.Plataforma</td>
+            <td>@item.Genero.Nome</td>
+            <td>
+                <a class="btn btn-outline-dark btn-sm" asp-action="Editar" asp-route-id="@item.JogoId">Editar</a>
+                <!-- Button trigger modal -->
+                <button onclick="codigo.value = @item.JogoId" type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#exampleModal">
+                    Excluir
+                </button>
+                <a class="btn btn-outline-primary btn-sm"
+                   asp-action="listar" asp-controller="genero"
+                   asp-route-idBusca="@item.GeneroId">
+                    Genero
+                </a>
+            </td>
+        </tr>
+    }
+</table>

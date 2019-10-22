@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using ProjetoFinal.Models;
 using ProjetoFinal.persistence;
@@ -19,6 +20,11 @@ namespace ProjetoFinal.repository
         public void Atualizar(Genero genero)
         {
             _context.Generos.Update(genero);
+        }
+
+        public IList<Genero> BuscarPor(Expression<Func<Genero, bool>> filtro)
+        {
+            return _context.Generos.Where(filtro).ToList();
         }
 
         public Genero BuscarPorCodigo(int codigo)
