@@ -10,6 +10,12 @@ namespace ProjetoFinal.repository
     public class GeneroRepository : IGeneroRepository
     {
         private GameStoreContext _context;
+
+        public GeneroRepository(GameStoreContext context)
+        {
+            _context = context;
+        }
+
         public void Atualizar(Genero genero)
         {
             _context.Generos.Update(genero);
@@ -41,3 +47,4 @@ namespace ProjetoFinal.repository
         }
     }
 }
+

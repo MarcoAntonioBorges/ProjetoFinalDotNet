@@ -11,9 +11,9 @@ namespace ProjetoFinal.Controllers
 {
     public class GeneroController : Controller
     {
-        private GeneroRepository _repository;
+        private IGeneroRepository _repository;
 
-        public GeneroController(GeneroRepository repository)
+        public GeneroController(IGeneroRepository repository)
         {
             _repository = repository;
         }

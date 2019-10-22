@@ -10,9 +10,9 @@ namespace ProjetoFinal.Controllers
 {
     public class JogoController : Controller
     {
-        private JogoRepository _repository;
+        private IJogoRepository _repository;
 
-        public JogoController(JogoRepository repository)
+        public JogoController(IJogoRepository repository)
         {
             _repository = repository;
         }

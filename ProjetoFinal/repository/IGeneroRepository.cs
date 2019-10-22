@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoFinal.repository
 {
-    interface IGeneroRepository
+    public interface IGeneroRepository
     {
         void Cadastrar(Genero genero);
         void Atualizar(Genero genero);
